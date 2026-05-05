@@ -335,4 +335,19 @@
     <lastmod>2026-04-27</lastmod>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://getverdict.fyi/e2b/</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://getverdict.fyi/langfuse/</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://getverdict.fyi/mistral-la-plateforme/</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
 </urlset>
