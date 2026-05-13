@@ -350,4 +350,22 @@
     <lastmod>2026-05-05</lastmod>
     <changefreq>weekly</changefreq>
   </url>
+  <url>
+    <loc>https://getverdict.fyi/langsmith/</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getverdict.fyi/pinecone/</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getverdict.fyi/guardrails-ai/</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
