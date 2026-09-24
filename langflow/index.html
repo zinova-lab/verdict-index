@@ -25,7 +25,7 @@
   <div class="meta">Visual AI Agent Builder &middot; Open Source (MIT)</div>
   <div class="meta">Evaluated 2026.03.13 &middot; Updated 2026.09.23 &middot; Framework v0.3.2</div>
   <div class="meta-owner">IBM &middot; via DataStax &middot; langflow 1.12.3</div>
-  <div class="score-hero"><div><span class="score-big">29</span><span class="score-denom">&thinsp;/&thinsp;85</span></div><div class="score-meta">Layer 0 &middot; Public Documentation Only<br>Rank #66 of 69 platforms evaluated<br>Framework v0.3.2<br>CISA KEV: CVE-2025-3248 (added 2025.05.05 &middot; FCEB deadline 2025.05.26)</div></div>
+  <div class="score-hero"><div><span class="score-big">29</span><span class="score-denom">&thinsp;/&thinsp;85</span></div><div class="score-meta">Layer 0 &middot; Public Documentation Only<br>Rank #67 of 70 platforms evaluated<br>Framework v0.3.2<br>CISA KEV: CVE-2025-3248 (added 2025.05.05 &middot; FCEB deadline 2025.05.26)</div></div>
   <div class="finding">158 CVEs published against Langflow OSS in the trailing 12 months (43 at CVSS 9.0+, three at 10.0); six CISA KEV entries; independent telemetry records in-the-wild exploitation of at least eight vulnerabilities in 2026. Vendor documents in-process code execution and no tenant isolation; hardening controls are documented but opt-in. IBM operates disclosure and CVE assignment; hosted DataStax Langflow was removed 2026-04-09.</div>
   <div class="tags"><span class="tag tag-red">CISA KEV &times;6</span>
     <span class="tag tag-red">158 CVEs &middot; 12 Months</span>
@@ -40,7 +40,7 @@
     </svg></div>
     <div class="dim-list" id="dims" data-dims='[{"l":"V","s":13,"m":20,"high":true},{"l":"E","s":0,"m":15,"inactive":true},{"l":"R","s":3,"m":20,"low":true},{"l":"D","s":1,"m":15,"low":true},{"l":"I","s":4,"m":10},{"l":"C","s":3,"m":10},{"l":"T","s":5,"m":10}]'></div>
   </div>
-  <div class="cta-bar"><a href="/" class="cta-link">View All 69 Evaluations</a><a href="/#subscribe" class="cta-link">Get Notified of Score Changes</a></div>
+  <div class="cta-bar"><a href="/" class="cta-link">View All 70 Evaluations</a><a href="/#subscribe" class="cta-link">Get Notified of Score Changes</a></div>
 </div>
 <footer><div class="footer-note">VERDICT is not a certification authority. Scores are evaluations, not guarantees.<br>VERDICT by ZinovaCreation &middot; Est. 2026 &middot; Japan &middot; <a href="/">getverdict.fyi</a><br>Evaluation tooling uses Claude (Anthropic). Bias disclosures in full reports.</div></footer>
 <script>document.querySelectorAll('.dim-list').forEach(list=>{const dims=JSON.parse(list.dataset.dims);dims.forEach(d=>{const pct=d.inactive?100:Math.round((d.s/d.m)*100);const isLow=!d.inactive&&pct<30;const isHigh=!d.inactive&&pct>=65;const fillClass=d.inactive?'fill-inactive':isLow?'fill-low':'';const letterClass=d.inactive?'dim-inactive':'';const valClass=d.inactive?'val-inactive':isHigh?'val-high':'';const valText=d.inactive?'L1':d.s+'/'+d.m;list.innerHTML+='<div class="dim-row"><span class="dim-letter '+letterClass+'">'+d.l+'</span><div class="dim-bar-track"><div class="dim-bar-fill '+fillClass+'" style="width:'+(d.inactive?'100':pct)+'%"></div></div><span class="dim-val '+valClass+'">'+valText+'</span></div>';});});</script>

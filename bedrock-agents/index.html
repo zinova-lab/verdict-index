@@ -25,7 +25,7 @@
   <div class="meta">Managed Agent Platform &middot; Enterprise SaaS</div>
   <div class="meta">Evaluated 2026.03.25 &middot; Framework v0.3.1</div>
   <div class="meta-owner">Amazon Web Services, Inc.</div>
-  <div class="score-hero"><div><span class="score-big">55</span><span class="score-denom">&thinsp;/&thinsp;85</span></div><div class="score-meta">Layer 0 &middot; Public Documentation Only<br>Rank #19 of 69 platforms evaluated<br>Framework v0.3.1</div></div>
+  <div class="score-hero"><div><span class="score-big">55</span><span class="score-denom">&thinsp;/&thinsp;85</span></div><div class="score-meta">Layer 0 &middot; Public Documentation Only<br>Rank #20 of 70 platforms evaluated<br>Framework v0.3.1</div></div>
   <div class="finding">Broadest compliance certification stack: SOC 1/2/3 Type 2, FedRAMP High, ISO family, HIPAA eligibility. Clearest AI training data commitment. CVE-2026-4269: S3 ownership bypass (supply chain, patched). DNS tunneling in Code Interpreter Sandbox: AWS classified as &amp;quot;intended functionality&amp;quot; &mdash; no code-level remedy. AgentCore Cedar Policy: deterministic enforcement outside LLM reasoning loop.</div>
   <div class="tags"><span class="tag tag-red">CVE-2026-4269 &middot; Supply Chain &middot; Build-Time Injection</span>
     <span class="tag tag-warn">DNS Tunneling &middot; &quot;Intended Functionality&quot; &middot; Unpatched</span>
@@ -40,7 +40,7 @@
     </svg></div>
     <div class="dim-list" id="dims" data-dims='[{"l":"V","s":14,"m":20,"high":true},{"l":"E","s":0,"m":15,"inactive":true},{"l":"R","s":11,"m":20},{"l":"D","s":12,"m":15,"high":true},{"l":"I","s":8,"m":10,"high":true},{"l":"C","s":5,"m":10},{"l":"T","s":5,"m":10}]'></div>
   </div>
-  <div class="cta-bar"><a href="/" class="cta-link">View All 69 Evaluations</a><a href="/#subscribe" class="cta-link">Get Notified of Score Changes</a></div>
+  <div class="cta-bar"><a href="/" class="cta-link">View All 70 Evaluations</a><a href="/#subscribe" class="cta-link">Get Notified of Score Changes</a></div>
 </div>
 <footer><div class="footer-note">VERDICT is not a certification authority. Scores are evaluations, not guarantees.<br>VERDICT by ZinovaCreation &middot; Est. 2026 &middot; Japan &middot; <a href="/">getverdict.fyi</a><br>Evaluation tooling uses Claude (Anthropic). Bias disclosures in full reports.</div></footer>
 <script>document.querySelectorAll('.dim-list').forEach(list=>{const dims=JSON.parse(list.dataset.dims);dims.forEach(d=>{const pct=d.inactive?100:Math.round((d.s/d.m)*100);const isLow=!d.inactive&&pct<30;const isHigh=!d.inactive&&pct>=65;const fillClass=d.inactive?'fill-inactive':isLow?'fill-low':'';const letterClass=d.inactive?'dim-inactive':'';const valClass=d.inactive?'val-inactive':isHigh?'val-high':'';const valText=d.inactive?'L1':d.s+'/'+d.m;list.innerHTML+='<div class="dim-row"><span class="dim-letter '+letterClass+'">'+d.l+'</span><div class="dim-bar-track"><div class="dim-bar-fill '+fillClass+'" style="width:'+(d.inactive?'100':pct)+'%"></div></div><span class="dim-val '+valClass+'">'+valText+'</span></div>';});});</script>

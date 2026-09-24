@@ -25,7 +25,7 @@
   <div class="meta">No-Code Agent Builder &middot; Enterprise SaaS</div>
   <div class="meta">Evaluated 2026.03.25 &middot; Framework v0.3.1</div>
   <div class="meta-owner">Microsoft Corporation</div>
-  <div class="score-hero"><div><span class="score-big">61</span><span class="score-denom">&thinsp;/&thinsp;85</span></div><div class="score-meta">Layer 0 &middot; Public Documentation Only<br>Rank #9 of 69 platforms evaluated<br>Framework v0.3.1</div></div>
+  <div class="score-hero"><div><span class="score-big">61</span><span class="score-denom">&thinsp;/&thinsp;85</span></div><div class="score-meta">Layer 0 &middot; Public Documentation Only<br>Rank #10 of 70 platforms evaluated<br>Framework v0.3.1</div></div>
   <div class="finding">Highest compliance posture in this index: SOC 2, ISO 27001, FedRAMP, and HIPAA BAA all explicitly confirmed &mdash; the only platform with all four. CVE-2025-32711 &amp;quot;EchoLeak&amp;quot; (CVSS 9.3): first documented zero-click prompt injection on a production AI system. All CVEs patched server-side by Microsoft with no customer action required. SSRF and spoofing classes have recurred across the evaluation window.</div>
   <div class="tags"><span class="tag tag-red">EchoLeak &middot; CVE-2025-32711 &middot; CVSS 9.3</span>
     <span class="tag tag-red">Zero-Click Prompt Injection &middot; First in Industry</span>
@@ -40,7 +40,7 @@
     </svg></div>
     <div class="dim-list" id="dims" data-dims='[{"l":"V","s":16,"m":20,"high":true},{"l":"E","s":0,"m":15,"inactive":true},{"l":"R","s":11,"m":20},{"l":"D","s":10,"m":15,"high":true},{"l":"I","s":7,"m":10,"high":true},{"l":"C","s":8,"m":10,"high":true},{"l":"T","s":9,"m":10,"high":true}]'></div>
   </div>
-  <div class="cta-bar"><a href="/" class="cta-link">View All 69 Evaluations</a><a href="/#subscribe" class="cta-link">Get Notified of Score Changes</a></div>
+  <div class="cta-bar"><a href="/" class="cta-link">View All 70 Evaluations</a><a href="/#subscribe" class="cta-link">Get Notified of Score Changes</a></div>
 </div>
 <footer><div class="footer-note">VERDICT is not a certification authority. Scores are evaluations, not guarantees.<br>VERDICT by ZinovaCreation &middot; Est. 2026 &middot; Japan &middot; <a href="/">getverdict.fyi</a><br>Evaluation tooling uses Claude (Anthropic). Bias disclosures in full reports.</div></footer>
 <script>document.querySelectorAll('.dim-list').forEach(list=>{const dims=JSON.parse(list.dataset.dims);dims.forEach(d=>{const pct=d.inactive?100:Math.round((d.s/d.m)*100);const isLow=!d.inactive&&pct<30;const isHigh=!d.inactive&&pct>=65;const fillClass=d.inactive?'fill-inactive':isLow?'fill-low':'';const letterClass=d.inactive?'dim-inactive':'';const valClass=d.inactive?'val-inactive':isHigh?'val-high':'';const valText=d.inactive?'L1':d.s+'/'+d.m;list.innerHTML+='<div class="dim-row"><span class="dim-letter '+letterClass+'">'+d.l+'</span><div class="dim-bar-track"><div class="dim-bar-fill '+fillClass+'" style="width:'+(d.inactive?'100':pct)+'%"></div></div><span class="dim-val '+valClass+'">'+valText+'</span></div>';});});</script>
