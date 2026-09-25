@@ -222,7 +222,7 @@ footer{border-top:1px solid var(--divider);padding:3rem;max-width:1200px;margin:
 </div>
 </div>
 <!-- REVIEW STATUS NOTICE (SelectionFrame-004 / ReviewCadence-001 B-2) -->
-<div class="notice-bar" style="padding:.75rem 2.5rem;background:var(--ice);border-top:1px solid var(--divider);border-bottom:1px solid var(--divider);font-family:var(--mono);font-size:.68rem;letter-spacing:.03em;color:var(--body);line-height:1.6;">Review status notice (updated 23 Sep 2026): re-verification of the 69 evaluations published in August 2026 is in progress (2 of 69 published); the review method has moved to trigger-driven reviews with an annual routine check (Framework v0.3.2). <a href="/notices/review-status/" style="color:var(--navy);text-decoration:underline;">Read the notice</a></div>
+<div class="notice-bar" style="padding:.75rem 2.5rem;background:var(--ice);border-top:1px solid var(--divider);border-bottom:1px solid var(--divider);font-family:var(--mono);font-size:.68rem;letter-spacing:.03em;color:var(--body);line-height:1.6;">Review status notice (updated 23 Sep 2026): re-verification of the 69 evaluations published in August 2026 is in progress (3 of 69 published); the review method has moved to trigger-driven reviews with an annual routine check (Framework v0.3.2). <a href="/notices/review-status/" style="color:var(--navy);text-decoration:underline;">Read the notice</a></div>
 <!-- SUBSCRIBE -->
 <div class="subscribe-bar" id="subscribe">
 <span class="subscribe-text">Get notified when scores change. No filler. No sponsored content.</span>
@@ -2493,6 +2493,48 @@ footer{border-top:1px solid var(--divider);padding:3rem;max-width:1200px;margin:
 <div class="score-display"><span class="score-main">40</span><span class="score-denom"> / 85</span><div class="score-layer">Layer 0 · Public Docs</div></div>
 </div>
 </a>
+<a class="eval-card" data-platform="phidata" href="/phidata/">
+<div class="card-left">
+<div class="card-meta">
+<div class="platform-name">Phidata (Agno)</div>
+<div class="platform-category">Agent Framework & Runtime · OSS (Apache 2.0)</div>
+<div class="platform-owner">Agno Inc. · Formerly Phidata</div>
+<div class="platform-date">Evaluated 2026.03.31 · Updated 2026.09.25 · Framework v0.3.2</div>
+<div class="key-finding">Four product-scoped CVEs in 12 months, led by CVE-2026-35002 (CVSS 9.8; eval() injection in FunctionCall field_type, fixed in 2.3.24 on 2026-01-08, 84 days before the CVE), with CVE-2026-10105 (ClickHouse SQL injection) fixed in 2.8.5 77 days after its public report and three of the four fixes shipped without a vendor advisory. Agno Inc. (New York) publishes Terms and a dated Privacy Notice with a named third-party list and per-category retention but no DPA or model-training statement; the runtime is self-hosted with JWT-based RBAC and optional HITL, SDK telemetry is on by default, and the repository has no SECURITY.md.</div>
+<div class="incident-tags">
+<span class="tag tag-red">4 CVEs · 12 Months (max CVSS 9.8)</span>
+<span class="tag tag-amber">SQLi Fix 77 Days After Report</span>
+<span class="tag tag-amber">Telemetry Default ON</span>
+<span class="tag tag-safe">Apache 2.0 OSS · Self-Hosted</span>
+</div>
+</div>
+<div class="dim-list" data-dims='[{"l":"V","s":16,"m":20,"high":true},{"l":"E","s":0,"m":15,"inactive":true},{"l":"R","s":4,"m":20,"low":true},{"l":"D","s":7,"m":15},{"l":"I","s":6,"m":10},{"l":"C","s":4,"m":10},{"l":"T","s":3,"m":10}]'></div>
+</div>
+<div class="card-right">
+<div class="radar-wrap"><svg class="radar-svg" viewbox="0 0 240 240">
+<polygon class="radar-ring" points="120,102 134.1,108.8 137.5,124 127.8,136.2 112.2,136.2 102.5,124 105.9,108.8"></polygon>
+<polygon class="radar-ring" points="120,84 148.1,97.6 155.1,128 135.6,152.4 104.4,152.4 84.9,128 91.9,97.6"></polygon>
+<polygon class="radar-ring" points="120,66 162.2,86.3 172.6,132 143.4,168.7 96.6,168.7 67.4,132 77.8,86.3"></polygon>
+<polygon class="radar-ring" points="120,48 176.3,75.1 190.2,136 151.2,184.9 88.8,184.9 49.8,136 63.7,75.1"></polygon>
+<line class="radar-axis" x1="120" x2="120" y1="120" y2="48"></line>
+<line class="radar-axis radar-axis-inactive" x1="120" x2="176.3" y1="120" y2="75.1"></line>
+<line class="radar-axis" x1="120" x2="190.2" y1="120" y2="136"></line>
+<line class="radar-axis" x1="120" x2="151.2" y1="120" y2="184.9"></line>
+<line class="radar-axis" x1="120" x2="88.8" y1="120" y2="184.9"></line>
+<line class="radar-axis" x1="120" x2="49.8" y1="120" y2="136"></line>
+<line class="radar-axis" x1="120" x2="63.7" y1="120" y2="75.1"></line>
+<g class="radar-data"><polygon class="radar-poly-fill" fill="#1B2A4A" points="120.0,62.4 120.0,120.0 134.0,123.2 134.6,150.3 101.3,158.9 91.9,126.4 103.1,106.5"></polygon><polygon class="radar-poly-stroke" points="120.0,62.4 120.0,120.0 134.0,123.2 134.6,150.3 101.3,158.9 91.9,126.4 103.1,106.5" stroke="#1B2A4A"></polygon></g>
+<text class="radar-label" text-anchor="middle" x="120" y="22">V</text>
+<text class="radar-label radar-label-inactive" text-anchor="start" x="197" y="64">E</text>
+<text class="radar-label" text-anchor="start" x="215" y="144">R</text>
+<text class="radar-label" text-anchor="start" x="164" y="213">D</text>
+<text class="radar-label" text-anchor="end" x="76" y="213">I</text>
+<text class="radar-label" text-anchor="end" x="25" y="144">C</text>
+<text class="radar-label" text-anchor="end" x="43" y="64">T</text>
+</svg></div>
+<div class="score-display"><span class="score-main">40</span><span class="score-denom"> / 85</span><div class="score-layer">Layer 0 · Public Docs</div></div>
+</div>
+</a>
 <a class="eval-card" data-platform="rivet" href="/rivet/">
 <div class="card-left">
 <div class="card-meta">
@@ -2532,47 +2574,6 @@ footer{border-top:1px solid var(--divider);padding:3rem;max-width:1200px;margin:
 <text class="radar-label" text-anchor="end" x="43" y="64">T</text>
 </svg></div>
 <div class="score-display"><span class="score-main">39</span><span class="score-denom"> / 85</span><div class="score-layer">Layer 0 · Public Docs</div></div>
-</div>
-</a>
-<a class="eval-card" data-platform="phidata" href="/phidata/">
-<div class="card-left">
-<div class="card-meta">
-<div class="platform-name">Phidata (Agno)</div>
-<div class="platform-category">Multi-Agent Framework · OSS (MPL 2.0)</div>
-<div class="platform-owner">Phidata Inc.</div>
-<div class="platform-date">Evaluated 2026.03.31 · Framework v0.3.1</div>
-<div class="key-finding">Zero CVEs. Self-hosted data sovereignty. HITL as architecture primitive. Telemetry default ON.</div>
-<div class="incident-tags">
-<span class="tag tag-dim">MPL 2.0 · Self-Hosted</span>
-<span class="tag tag-red">Telemetry Default ON</span>
-<span class="tag tag-amber">No SECURITY.md</span>
-</div>
-</div>
-<div class="dim-list" data-dims='[{"l":"V","s":11,"m":20},{"l":"E","s":0,"m":15,"inactive":true},{"l":"R","s":14,"m":20,"high":true},{"l":"D","s":3,"m":15,"low":true},{"l":"I","s":5,"m":10},{"l":"C","s":3,"m":10},{"l":"T","s":2,"m":10,"low":true}]'></div>
-</div>
-<div class="card-right">
-<div class="radar-wrap"><svg class="radar-svg" viewbox="0 0 240 240">
-<polygon class="radar-ring" points="120,102 134.1,108.8 137.5,124 127.8,136.2 112.2,136.2 102.5,124 105.9,108.8"></polygon>
-<polygon class="radar-ring" points="120,84 148.1,97.6 155.1,128 135.6,152.4 104.4,152.4 84.9,128 91.9,97.6"></polygon>
-<polygon class="radar-ring" points="120,66 162.2,86.3 172.6,132 143.4,168.7 96.6,168.7 67.4,132 77.8,86.3"></polygon>
-<polygon class="radar-ring" points="120,48 176.3,75.1 190.2,136 151.2,184.9 88.8,184.9 49.8,136 63.7,75.1"></polygon>
-<line class="radar-axis" x1="120" x2="120" y1="120" y2="48"></line>
-<line class="radar-axis radar-axis-inactive" x1="120" x2="176.3" y1="120" y2="75.1"></line>
-<line class="radar-axis" x1="120" x2="190.2" y1="120" y2="136"></line>
-<line class="radar-axis" x1="120" x2="151.2" y1="120" y2="184.9"></line>
-<line class="radar-axis" x1="120" x2="88.8" y1="120" y2="184.9"></line>
-<line class="radar-axis" x1="120" x2="49.8" y1="120" y2="136"></line>
-<line class="radar-axis" x1="120" x2="63.7" y1="120" y2="75.1"></line>
-<g class="radar-data"><polygon class="radar-poly-fill" fill="#1B2A4A" points="120.0,80.4 120.0,120.0 169.1,131.2 126.2,133.0 104.4,152.4 98.9,124.8 108.7,111.0"></polygon><polygon class="radar-poly-stroke" points="120.0,80.4 120.0,120.0 169.1,131.2 126.2,133.0 104.4,152.4 98.9,124.8 108.7,111.0" stroke="#1B2A4A"></polygon></g>
-<text class="radar-label" text-anchor="middle" x="120" y="22">V</text>
-<text class="radar-label radar-label-inactive" text-anchor="start" x="197" y="64">E</text>
-<text class="radar-label" text-anchor="start" x="215" y="144">R</text>
-<text class="radar-label" text-anchor="start" x="164" y="213">D</text>
-<text class="radar-label" text-anchor="end" x="76" y="213">I</text>
-<text class="radar-label" text-anchor="end" x="25" y="144">C</text>
-<text class="radar-label" text-anchor="end" x="43" y="64">T</text>
-</svg></div>
-<div class="score-display"><span class="score-main">38</span><span class="score-denom"> / 85</span><div class="score-layer">Layer 0 · Public Docs</div></div>
 </div>
 </a>
 <a class="eval-card" data-platform="letta" href="/letta/">
