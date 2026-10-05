@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>n8n Security Review — VERDICT Score: 35/85</title>
-<meta name="description" content="Independent security evaluation of n8n. Score: 35/85. CISA KEV listed (CVE-2025-68613, CVSS 9.9). 12+ CVEs in trailing 12 months. Structural sandbox bypass pattern across 5+ CVEs. Framework v0.3.1.">
-<meta property="og:title" content="n8n Security Review — VERDICT Score: 35/85">
-<meta property="og:description" content="Independent security evaluation of n8n. Score: 35/85. CISA KEV listed (CVE-2025-68613, CVSS 9.9). 12+ CVEs in trailing 12 months. Structural sandbox bypass pattern across 5+ CVEs. Framework v0.3.1.">
+<title>n8n Security Review — VERDICT Score: 46/85</title>
+<meta name="description" content="Independent security evaluation of n8n. Score: 46/85 (Tier B). 175 CVEs in 12 months (max CVSS 10.0); CISA KEV listed (CVE-2025-68613). Recurring sandbox escapes; task runners default since 2.0. Framework v0.3.2.">
+<meta property="og:title" content="n8n Security Review — VERDICT Score: 46/85">
+<meta property="og:description" content="Independent security evaluation of n8n. Score: 46/85. 175 CVEs in 12 months, CISA KEV listed (CVE-2025-68613). Framework v0.3.2.">
 <meta property="og:url" content="https://getverdict.fyi/n8n/">
 <meta property="og:type" content="article">
 <link rel="canonical" href="https://getverdict.fyi/n8n/">
@@ -22,22 +22,25 @@
 <div class="wrap">
   <div class="breadcrumb"><a href="/">VERDICT</a> &rsaquo; Evaluations &rsaquo; n8n</div>
   <h1>n8n</h1>
-  <div class="meta">Workflow Automation &middot; Open Source</div>
-  <div class="meta">Evaluated 2026.03.13 &middot; Updated 2026.03.24 &middot; Framework v0.3.1</div>
-  <div class="meta-owner">Independent &middot; n8n GmbH (Berlin)</div>
-  <div class="score-hero"><div><span class="score-big">35</span><span class="score-denom">&thinsp;/&thinsp;85</span></div><div class="score-meta">Layer 0 &middot; Public Documentation Only<br>Rank #59 of 70 platforms evaluated<br>Framework v0.3.1<br>CISA KEV: CVE-2025-68613 (added 2026.03.11 &middot; FCEB deadline 2026.03.25)</div></div>
-  <div class="finding">12+ CVEs in trailing 12 months. Two CVSS 10.0 vulnerabilities confirmed (CVE-2026-21858, CVE-2026-21877). CVE-2025-68613 added to CISA KEV catalog March 2026. Blocklist-based sandbox bypass confirmed across 5+ independent CVEs.</div>
+  <div class="meta">Workflow Automation &middot; AI Agent Orchestration &middot; Fair-code (Sustainable Use License) &middot; Self-hosted and Cloud</div>
+  <div class="meta">Evaluated 2026.03.13 &middot; Updated 2026.09.25 &middot; Framework v0.3.2</div>
+  <div class="meta-owner">n8n GmbH (Berlin) &middot; independent &middot; n8n 2.40.7</div>
+  <div class="score-hero"><div><span class="score-big">46</span><span class="score-denom">&thinsp;/&thinsp;85</span></div><div class="score-meta">Layer 0 &middot; Public Documentation Only<br>Rank #38 of 70 platforms evaluated<br>Framework v0.3.2<br>CISA KEV: CVE-2025-68613 (added 2026.03.11 &middot; FCEB deadline 2026.03.25)</div></div>
+  <div class="finding">189 security advisories were published for the n8n package in the trailing 12 months (2025-09-25 &rarr; 2026-09-25); 175 carry CVE IDs (23 Critical; CVSS 3.1 maximum 10.0, reached by four CVEs including CVE-2026-21858, unauthenticated file access fixed in 1.121.0). CVE-2025-68613 (expression-injection RCE, CVSS 9.9) was added to the CISA KEV catalog on 2026-03-11 with an FCEB due date of 2026-03-25, 82 days after its advisory. Expression-engine, Python and task-runner sandbox escapes recurred across the window; n8n 2.0 (2025-12-08) made task runners, Execute Command blocking and Code-node environment blocking the defaults, and since 2026-04-22 every advisory has been published within 30 days of its fix. A sub-processor list dated 2026-09-22, a DPA with Standard Contractual Clauses, per-category retention and no-training statements, a SOC 2 report for enterprise customers and a public SOC 3 report are on record. Framework v0.3.2 update; previous score 35/85.</div>
   <div class="tags"><span class="tag tag-red">CISA KEV &middot; CVE-2025-68613</span>
-    <span class="tag tag-red">12+ CVEs &middot; 2&times; CVSS 10.0</span>
-    <span class="tag tag-red">Structural Sandbox Bypass &middot; 5+ CVEs</span></div>
+    <span class="tag tag-red">175 CVEs &middot; 12 Months (max CVSS 10.0)</span>
+    <span class="tag tag-red">Recurring Sandbox Escapes &middot; Expression / Python / Task Runner</span>
+    <span class="tag tag-safe">SOC 2 (Enterprise) &middot; SOC 3 Public</span>
+    <span class="tag tag-safe">Dated Sub-processor List &middot; DPA with SCCs</span>
+    <span class="tag tag-dim">Fair-code &middot; Sustainable Use License</span></div>
   <div class="radar-section">
     <div class="radar-wrap"><svg class="radar-svg" viewBox="0 0 240 240">
         <polygon class="radar-ring" points="120,102 134.1,108.8 137.5,124 127.8,136.2 112.2,136.2 102.5,124 105.9,108.8"/><polygon class="radar-ring" points="120,84 148.1,97.6 155.1,128 135.6,152.4 104.4,152.4 84.9,128 91.9,97.6"/><polygon class="radar-ring" points="120,66 162.2,86.3 172.6,132 143.4,168.7 96.6,168.7 67.4,132 77.8,86.3"/><polygon class="radar-ring" points="120,48 176.3,75.1 190.2,136 151.2,184.9 88.8,184.9 49.8,136 63.7,75.1"/>
         <line class="radar-axis" x1="120" y1="120" x2="120" y2="48"/><line class="radar-axis radar-axis-inactive" x1="120" y1="120" x2="176.3" y2="75.1"/><line class="radar-axis" x1="120" y1="120" x2="190.2" y2="136"/><line class="radar-axis" x1="120" y1="120" x2="151.2" y2="184.9"/><line class="radar-axis" x1="120" y1="120" x2="88.8" y2="184.9"/><line class="radar-axis" x1="120" y1="120" x2="49.8" y2="136"/><line class="radar-axis" x1="120" y1="120" x2="63.7" y2="75.1"/>
-        <g class="radar-data"><polygon class="radar-poly-fill" fill="#1B2A4A" points="120.0,76.8 120.0,120.0 137.5,124.0 126.2,133.0 101.3,158.9 98.9,124.8 86.2,93.1"/><polygon class="radar-poly-stroke" stroke="#1B2A4A" points="120.0,76.8 120.0,120.0 137.5,124.0 126.2,133.0 101.3,158.9 98.9,124.8 86.2,93.1"/></g>
+        <g class="radar-data"><polygon class="radar-poly-fill" fill="#1B2A4A" points="120.0,62.4 120.0,120.0 130.5,122.4 147.1,176.2 101.3,158.9 91.9,126.4 97.5,102.0"/><polygon class="radar-poly-stroke" stroke="#1B2A4A" points="120.0,62.4 120.0,120.0 130.5,122.4 147.1,176.2 101.3,158.9 91.9,126.4 97.5,102.0"/></g>
         <text class="radar-label" x="120" y="22" text-anchor="middle">V</text><text class="radar-label radar-label-inactive" x="193" y="61" text-anchor="start">E</text><text class="radar-label" x="212" y="141" text-anchor="start">R</text><text class="radar-label" x="161" y="205" text-anchor="start">D</text><text class="radar-label" x="79" y="205" text-anchor="end">I</text><text class="radar-label" x="28" y="141" text-anchor="end">C</text><text class="radar-label" x="47" y="61" text-anchor="end">T</text>
     </svg></div>
-    <div class="dim-list" id="dims" data-dims='[{"l":"V","s":12,"m":20},{"l":"E","s":0,"m":15,"inactive":true},{"l":"R","s":5,"m":20,"low":true},{"l":"D","s":3,"m":15,"low":true},{"l":"I","s":6,"m":10},{"l":"C","s":3,"m":10},{"l":"T","s":6,"m":10}]'></div>
+    <div class="dim-list" id="dims" data-dims='[{"l":"V","s":16,"m":20,"high":true},{"l":"E","s":0,"m":15,"inactive":true},{"l":"R","s":3,"m":20,"low":true},{"l":"D","s":13,"m":15,"high":true},{"l":"I","s":6,"m":10},{"l":"C","s":4,"m":10},{"l":"T","s":4,"m":10}]'></div>
   </div>
   <div class="cta-bar"><a href="/" class="cta-link">View All 70 Evaluations</a><a href="/#subscribe" class="cta-link">Get Notified of Score Changes</a></div>
 </div>

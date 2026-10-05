@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Flowise Security Review — VERDICT Score: 33/85</title>
-<meta name="description" content="Independent security evaluation of Flowise. Score: 33/85. Six CVEs in March 2026 cluster including two CVSS 9.8. Authentication not enforced by default. Acquired by Workday. Framework v0.3.1.">
-<meta property="og:title" content="Flowise Security Review — VERDICT Score: 33/85">
-<meta property="og:description" content="Independent security evaluation of Flowise. Score: 33/85. Six CVEs in March 2026 cluster including two CVSS 9.8. Authentication not enforced by default. Acquired by Workday. Framework v0.3.1.">
+<title>Flowise Security Review — VERDICT Score: 31/85</title>
+<meta name="description" content="Independent security evaluation of Flowise (Workday). Score: 31/85. 119 CVEs in 12 months, max CVSS 10.0; repository archived Aug 2026, EOL Aug 31; 11 records unpatched on 3.1.4. Framework v0.3.2.">
+<meta property="og:title" content="Flowise Security Review — VERDICT Score: 31/85">
+<meta property="og:description" content="Independent security evaluation of Flowise (Workday). Score: 31/85. 119 CVEs in 12 months, max CVSS 10.0; archived Aug 2026, EOL. Framework v0.3.2.">
 <meta property="og:url" content="https://getverdict.fyi/flowise/">
 <meta property="og:type" content="article">
 <link rel="canonical" href="https://getverdict.fyi/flowise/">
@@ -22,22 +22,25 @@
 <div class="wrap">
   <div class="breadcrumb"><a href="/">VERDICT</a> &rsaquo; Evaluations &rsaquo; Flowise</div>
   <h1>Flowise</h1>
-  <div class="meta">LLM Agent Builder &middot; Open Source</div>
-  <div class="meta">Evaluated 2026.03.13 &middot; Updated 2026.03.24 &middot; Framework v0.3.1</div>
-  <div class="meta-owner">Acquired by Workday (Aug 2025)</div>
-  <div class="score-hero"><div><span class="score-big">33</span><span class="score-denom">&thinsp;/&thinsp;85</span></div><div class="score-meta">Layer 0 &middot; Public Documentation Only<br>Rank #64 of 70 platforms evaluated<br>Framework v0.3.1</div></div>
-  <div class="finding">March 2026 cluster: 6 CVEs patched in v3.0.13, including CVE-2025-55346 and CVE-2025-58434 (both CVSS 9.8). Structural pattern: authentication not enforced for critical functions across 4+ endpoints.</div>
-  <div class="tags"><span class="tag tag-red">6 CVEs &middot; Mar 2026 Cluster</span>
-    <span class="tag tag-red">2&times; CVSS 9.8 &middot; Auth Not Enforced</span>
-    <span class="tag tag-warn">Acquired by Workday (Aug 2025)</span></div>
+  <div class="meta">LLM Agent Builder &middot; Low-Code Agent Platform &middot; Open Source (Apache 2.0, archived 2026-08-13)</div>
+  <div class="meta">Evaluated 2026.03.13 &middot; Updated 2026.09.25 &middot; Framework v0.3.2</div>
+  <div class="meta-owner">Workday (via FlowiseAI Inc.) &middot; acquired 2025-08-14 &middot; archived 2026-08-13 &middot; flowise 3.1.4</div>
+  <div class="score-hero"><div><span class="score-big">31</span><span class="score-denom">&thinsp;/&thinsp;85</span></div><div class="score-meta">Layer 0 &middot; Public Documentation Only<br>Rank #66 of 70 platforms evaluated<br>Framework v0.3.2</div></div>
+  <div class="finding">119 CVE records were first publicly disclosed against Flowise in the trailing 12 months (2025-09-25 &rarr; 2026-09-25), 30 at CVSS 9.0 or above and the highest at 10.0 (CVE-2026-70478, NVD v3.1); eight further CVEs assigned in the window to advisories published before it are recorded as retroactive and not counted. The operator published 118 repository advisories with fixes through flowise 3.1.4. The product was wound down inside the window: code freeze 2026-07-29, repository archived 2026-08-13, end of life 2026-08-31, and SECURITY.md no longer accepts vulnerability reports; eleven records against the final 3.1.4 carry no patched version. FlowiseAI Inc. (Delaware) is a Workday, Inc. subsidiary since the acquisition announced 2025-08-14. No DPA, training-use statement, retention schedule or independent certification found. Framework v0.3.2 update; previous score 33/85.</div>
+  <div class="tags"><span class="tag tag-red">119 CVEs &middot; 12 Months (max CVSS 10.0)</span>
+    <span class="tag tag-red">11 Records Unpatched on Final 3.1.4</span>
+    <span class="tag tag-amber">Repository Archived &middot; Aug 2026 &middot; EOL Aug 31</span>
+    <span class="tag tag-amber">No Report Channel After EOL</span>
+    <span class="tag tag-dim">Workday Subsidiary &middot; Acquired Aug 2025</span>
+    <span class="tag tag-safe">Apache 2.0 Core &middot; 118 Vendor Advisories</span></div>
   <div class="radar-section">
     <div class="radar-wrap"><svg class="radar-svg" viewBox="0 0 240 240">
         <polygon class="radar-ring" points="120,102 134.1,108.8 137.5,124 127.8,136.2 112.2,136.2 102.5,124 105.9,108.8"/><polygon class="radar-ring" points="120,84 148.1,97.6 155.1,128 135.6,152.4 104.4,152.4 84.9,128 91.9,97.6"/><polygon class="radar-ring" points="120,66 162.2,86.3 172.6,132 143.4,168.7 96.6,168.7 67.4,132 77.8,86.3"/><polygon class="radar-ring" points="120,48 176.3,75.1 190.2,136 151.2,184.9 88.8,184.9 49.8,136 63.7,75.1"/>
         <line class="radar-axis" x1="120" y1="120" x2="120" y2="48"/><line class="radar-axis radar-axis-inactive" x1="120" y1="120" x2="176.3" y2="75.1"/><line class="radar-axis" x1="120" y1="120" x2="190.2" y2="136"/><line class="radar-axis" x1="120" y1="120" x2="151.2" y2="184.9"/><line class="radar-axis" x1="120" y1="120" x2="88.8" y2="184.9"/><line class="radar-axis" x1="120" y1="120" x2="49.8" y2="136"/><line class="radar-axis" x1="120" y1="120" x2="63.7" y2="75.1"/>
-        <g class="radar-data"><polygon class="radar-poly-fill" fill="#1B2A4A" points="120.0,84.0 120.0,120.0 134.0,123.2 128.3,137.3 104.4,152.4 91.9,126.4 86.2,93.1"/><polygon class="radar-poly-stroke" stroke="#1B2A4A" points="120.0,84.0 120.0,120.0 134.0,123.2 128.3,137.3 104.4,152.4 91.9,126.4 86.2,93.1"/></g>
+        <g class="radar-data"><polygon class="radar-poly-fill" fill="#1B2A4A" points="120.0,76.8 120.0,120.0 130.5,122.4 132.5,145.9 113.8,133.0 91.9,126.4 97.5,102.0"/><polygon class="radar-poly-stroke" stroke="#1B2A4A" points="120.0,76.8 120.0,120.0 130.5,122.4 132.5,145.9 113.8,133.0 91.9,126.4 97.5,102.0"/></g>
         <text class="radar-label" x="120" y="22" text-anchor="middle">V</text><text class="radar-label radar-label-inactive" x="193" y="61" text-anchor="start">E</text><text class="radar-label" x="212" y="141" text-anchor="start">R</text><text class="radar-label" x="161" y="205" text-anchor="start">D</text><text class="radar-label" x="79" y="205" text-anchor="end">I</text><text class="radar-label" x="28" y="141" text-anchor="end">C</text><text class="radar-label" x="47" y="61" text-anchor="end">T</text>
     </svg></div>
-    <div class="dim-list" id="dims" data-dims='[{"l":"V","s":10,"m":20},{"l":"E","s":0,"m":15,"inactive":true},{"l":"R","s":4,"m":20,"low":true},{"l":"D","s":4,"m":15,"low":true},{"l":"I","s":5,"m":10},{"l":"C","s":4,"m":10},{"l":"T","s":6,"m":10}]'></div>
+    <div class="dim-list" id="dims" data-dims='[{"l":"V","s":12,"m":20},{"l":"E","s":0,"m":15,"inactive":true},{"l":"R","s":3,"m":20,"low":true},{"l":"D","s":6,"m":15},{"l":"I","s":2,"m":10,"low":true},{"l":"C","s":4,"m":10},{"l":"T","s":4,"m":10}]'></div>
   </div>
   <div class="cta-bar"><a href="/" class="cta-link">View All 70 Evaluations</a><a href="/#subscribe" class="cta-link">Get Notified of Score Changes</a></div>
 </div>
