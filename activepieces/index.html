@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Activepieces Security Review — VERDICT Score: 52/85</title>
-<meta name="description" content="Independent security evaluation of Activepieces. Score: 52/85. Only HIPAA-compliant platform in the index. Germany-hosted cloud, zero critical CVEs. Y Combinator backed. Framework v0.3.1.">
-<meta property="og:title" content="Activepieces Security Review — VERDICT Score: 52/85">
-<meta property="og:description" content="Independent security evaluation of Activepieces. Score: 52/85. Only HIPAA-compliant platform in the index. Germany-hosted cloud, zero critical CVEs. Y Combinator backed. Framework v0.3.1.">
+<title>Activepieces Security Review — VERDICT Score: 36/85</title>
+<meta name="description" content="Independent security evaluation of Activepieces. Score: 36/85 (Tier C), down from 52/85. 8 CVEs in 12 months, max CVSS 9.3, all vendor advisories fixed before publication. Open core (MIT), Germany-hosted cloud, SOC 2 in progress. Framework v0.3.2.">
+<meta property="og:title" content="Activepieces Security Review — VERDICT Score: 36/85">
+<meta property="og:description" content="Independent security evaluation of Activepieces. Score: 36/85 (Tier C), down from 52/85. 8 CVEs in 12 months, max CVSS 9.3, all vendor advisories fixed before publication. Open core (MIT), Germany-hosted cloud, SOC 2 in progress. Framework v0.3.2.">
 <meta property="og:url" content="https://getverdict.fyi/activepieces/">
 <meta property="og:type" content="article">
 <link rel="canonical" href="https://getverdict.fyi/activepieces/">
@@ -22,22 +22,22 @@
 <div class="wrap">
   <div class="breadcrumb"><a href="/">VERDICT</a> &rsaquo; Evaluations &rsaquo; Activepieces</div>
   <h1>Activepieces</h1>
-  <div class="meta">Workflow Automation &middot; Open Source (MIT)</div>
-  <div class="meta">Evaluated 2026.03.13 &middot; Updated 2026.05.13 &middot; Framework v0.3.1</div>
-  <div class="meta-owner">Independent &middot; Y Combinator</div>
-  <div class="score-hero"><div><span class="score-big">52</span><span class="score-denom">&thinsp;/&thinsp;85</span></div><div class="score-meta">Layer 0 &middot; Public Documentation Only<br>Rank #23 of 70 platforms evaluated<br>Framework v0.3.1</div></div>
-  <div class="finding">HIPAA-compliant &mdash; the only platform in this index to achieve it. Cloud hosted in Germany (EU), strongest GDPR posture. Zero critical CVEs, though platform youth means limited security researcher attention.</div>
-  <div class="tags"><span class="tag tag-amber">HIPAA &middot; Only Platform in Index</span>
-    <span class="tag tag-amber">Germany Cloud &middot; GDPR Strongest</span>
-    <span class="tag tag-dim">1 Advisory (Low) &middot; 2025</span></div>
+  <div class="meta">Workflow Automation &middot; Open Core (MIT core + Commercial License packages/ee)</div>
+  <div class="meta">Evaluated 2026.03.13 &middot; Updated 2026.10.31 &middot; Framework v0.3.2</div>
+  <div class="meta-owner">Activepieces Inc.</div>
+  <div class="score-hero"><div><span class="score-big">36</span><span class="score-denom">&thinsp;/&thinsp;85</span></div><div class="score-meta">Layer 0 &middot; Public Documentation Only<br>Rank #59 of 70 platforms evaluated<br>Framework v0.3.2</div></div>
+  <div class="finding">Eight CVEs attributed to the product in the trailing 12 months (max CVSS 9.3, two cross-tenant), each vendor advisory fixed before publication. Default execution mode is unsandboxed. Cloud hosted in Germany (EU); SOC 2 Type 2 in progress, no HIPAA or BAA claim on vendor pages; trust center publishes an undated sub-processor list, with DPA and pentest report restricted.</div>
+  <div class="tags"><span class="tag tag-red">8 CVEs &middot; Max CVSS 9.3 &middot; 2026</span>
+    <span class="tag tag-amber">Fixes Pre-Publication &middot; Reporters Credited</span>
+    <span class="tag tag-dim">Germany Cloud &middot; SOC 2 In Progress</span></div>
   <div class="radar-section">
     <div class="radar-wrap"><svg class="radar-svg" viewBox="0 0 240 240">
         <polygon class="radar-ring" points="120,102 134.1,108.8 137.5,124 127.8,136.2 112.2,136.2 102.5,124 105.9,108.8"/><polygon class="radar-ring" points="120,84 148.1,97.6 155.1,128 135.6,152.4 104.4,152.4 84.9,128 91.9,97.6"/><polygon class="radar-ring" points="120,66 162.2,86.3 172.6,132 143.4,168.7 96.6,168.7 67.4,132 77.8,86.3"/><polygon class="radar-ring" points="120,48 176.3,75.1 190.2,136 151.2,184.9 88.8,184.9 49.8,136 63.7,75.1"/>
         <line class="radar-axis" x1="120" y1="120" x2="120" y2="48"/><line class="radar-axis radar-axis-inactive" x1="120" y1="120" x2="176.3" y2="75.1"/><line class="radar-axis" x1="120" y1="120" x2="190.2" y2="136"/><line class="radar-axis" x1="120" y1="120" x2="151.2" y2="184.9"/><line class="radar-axis" x1="120" y1="120" x2="88.8" y2="184.9"/><line class="radar-axis" x1="120" y1="120" x2="49.8" y2="136"/><line class="radar-axis" x1="120" y1="120" x2="63.7" y2="75.1"/>
-        <g class="radar-data"><polygon class="radar-poly-fill" fill="#1B2A4A" points="120.0,73.2 120.0,120.0 172.6,132.0 140.8,163.2 107.5,145.9 77.9,129.6 97.5,102.0"/><polygon class="radar-poly-stroke" stroke="#1B2A4A" points="120.0,73.2 120.0,120.0 172.6,132.0 140.8,163.2 107.5,145.9 77.9,129.6 97.5,102.0"/></g>
+        <g class="radar-data"><polygon class="radar-poly-fill" fill="#1B2A4A" points="120.0,76.8 120.0,120.0 134.0,123.2 128.3,137.3 101.3,158.9 91.9,126.4 86.2,93.1"/><polygon class="radar-poly-stroke" stroke="#1B2A4A" points="120.0,76.8 120.0,120.0 134.0,123.2 128.3,137.3 101.3,158.9 91.9,126.4 86.2,93.1"/></g>
         <text class="radar-label" x="120" y="22" text-anchor="middle">V</text><text class="radar-label radar-label-inactive" x="193" y="61" text-anchor="start">E</text><text class="radar-label" x="212" y="141" text-anchor="start">R</text><text class="radar-label" x="161" y="205" text-anchor="start">D</text><text class="radar-label" x="79" y="205" text-anchor="end">I</text><text class="radar-label" x="28" y="141" text-anchor="end">C</text><text class="radar-label" x="47" y="61" text-anchor="end">T</text>
     </svg></div>
-    <div class="dim-list" id="dims" data-dims='[{"l":"V","s":13,"m":20,"high":true},{"l":"E","s":0,"m":15,"inactive":true},{"l":"R","s":15,"m":20,"high":true},{"l":"D","s":10,"m":15,"high":true},{"l":"I","s":4,"m":10},{"l":"C","s":6,"m":10},{"l":"T","s":4,"m":10}]'></div>
+    <div class="dim-list" id="dims" data-dims='[{"l":"V","s":12,"m":20},{"l":"E","s":0,"m":15,"inactive":true},{"l":"R","s":4,"m":20,"low":true},{"l":"D","s":4,"m":15,"low":true},{"l":"I","s":6,"m":10},{"l":"C","s":4,"m":10},{"l":"T","s":6,"m":10}]'></div>
   </div>
   <div class="cta-bar"><a href="/" class="cta-link">View All 70 Evaluations</a><a href="/#subscribe" class="cta-link">Get Notified of Score Changes</a></div>
 </div>
