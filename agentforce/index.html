@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Salesforce Agentforce Security Review — VERDICT Score: 58/85</title>
-<meta name="description" content="Independent security evaluation of Salesforce Agentforce. Score: 58/85. ForcedLeak vulnerability (CVSS 9.4), 42-day patch window. Strong compliance documentation. Framework v0.3.1.">
-<meta property="og:title" content="Salesforce Agentforce Security Review — VERDICT Score: 58/85">
-<meta property="og:description" content="Independent security evaluation of Salesforce Agentforce. Score: 58/85. ForcedLeak vulnerability (CVSS 9.4), 42-day patch window. Strong compliance documentation. Framework v0.3.1.">
+<title>Salesforce Agentforce Security Review — VERDICT Score: 59/85</title>
+<meta name="description" content="Independent security evaluation of Salesforce Agentforce. Score: 59/85 (prev 58). No CVE in the trailing 12 months; two CVE-less prompt-injection disclosures (PipeLeak, SalesBleed) repeat the Web-to-Lead exfiltration pattern. Data masking disabled for agents. Framework v0.3.2.">
+<meta property="og:title" content="Salesforce Agentforce Security Review — VERDICT Score: 59/85">
+<meta property="og:description" content="Independent security evaluation of Salesforce Agentforce. Score: 59/85 (prev 58). No CVE in the trailing 12 months; two CVE-less prompt-injection disclosures (PipeLeak, SalesBleed) repeat the Web-to-Lead exfiltration pattern. Data masking disabled for agents. Framework v0.3.2.">
 <meta property="og:url" content="https://getverdict.fyi/agentforce/">
 <meta property="og:type" content="article">
 <link rel="canonical" href="https://getverdict.fyi/agentforce/">
@@ -23,22 +23,23 @@
   <div class="breadcrumb"><a href="/">VERDICT</a> &rsaquo; Evaluations &rsaquo; Salesforce Agentforce</div>
   <h1>Salesforce Agentforce</h1>
   <div class="meta">CRM-Native Agent Builder &middot; Enterprise SaaS</div>
-  <div class="meta">Evaluated 2026.03.25 &middot; Framework v0.3.1</div>
+  <div class="meta">Evaluated 2026.03.25 &middot; Updated 2026.11.06 &middot; Framework v0.3.2</div>
   <div class="meta-owner">Salesforce, Inc. (NYSE: CRM)</div>
-  <div class="score-hero"><div><span class="score-big">58</span><span class="score-denom">&thinsp;/&thinsp;85</span></div><div class="score-meta">Layer 0 &middot; Public Documentation Only<br>Rank #11 of 70 platforms evaluated<br>Framework v0.3.1</div></div>
-  <div class="finding">FedRAMP High explicitly confirmed for Agentforce (Jun 2025) &mdash; first AI agent platform with FedRAMP High for the product itself. Native OLS/FLS platform-layer permission enforcement: strongest least-privilege architecture in this index. ForcedLeak (CVSS 9.4, Sep 2025): indirect prompt injection via Web-to-Lead form, 42-day patch window. Topic containment confirmed bypassable. Data masking disabled for autonomous agent workflows.</div>
-  <div class="tags"><span class="tag tag-red">ForcedLeak &middot; CVSS 9.4 &middot; 42-Day Patch</span>
-    <span class="tag tag-red">Topic Containment Bypass &middot; Model-Guidance Only</span>
-    <span class="tag tag-amber">FedRAMP High &middot; SOC2 &middot; HIPAA BAA &middot; ISO27001</span>
-    <span class="tag tag-warn">Data Masking Disabled &middot; Autonomous Workflows</span></div>
+  <div class="score-hero"><div><span class="score-big">59</span><span class="score-denom">&thinsp;/&thinsp;85</span></div><div class="score-meta">Layer 0 &middot; Public Documentation Only<br>Rank #11 of 70 platforms evaluated<br>Framework v0.3.2</div></div>
+  <div class="finding">Update 2026-11-06: 59/85 (prev 58). No CVE with Agentforce as the affected product in the trailing 12 months; PipeLeak (Apr 2026) and SalesBleed (Sep 2026) are CVE-less advisories, not counted. All three published chains since 2025 start with a Web-to-Lead prompt injection and end with CRM data leaving through an agent output channel (structural issue). SalesBleed fix confirmed 79 days (first chain) and 112 days (all three) after report. Einstein Trust Layer data masking disabled for agents. Closed source; SOC 2 / ISO reports login-gated. DPA with SCCs/BCRs, dated sub-processor list and release-note change log, no-training statement, ISO 42001, confirmation defaults for standard actions; Agentforce listed within the Government Cloud Plus FedRAMP High boundary.</div>
+  <div class="tags"><span class="tag tag-amber">No CVE in Window &middot; 2 CVE-less Advisories</span>
+    <span class="tag tag-red">Web-to-Lead Injection &middot; Recurring Root Cause</span>
+    <span class="tag tag-warn">SalesBleed &middot; 79–112 Day Fix Confirmation</span>
+    <span class="tag tag-warn">Data Masking Disabled &middot; Agents</span>
+    <span class="tag tag-safe">ISO 42001 &middot; DPA &middot; HITL Defaults</span></div>
   <div class="radar-section">
     <div class="radar-wrap"><svg class="radar-svg" viewBox="0 0 240 240">
         <polygon class="radar-ring" points="120,102 134.1,108.8 137.5,124 127.8,136.2 112.2,136.2 102.5,124 105.9,108.8"/><polygon class="radar-ring" points="120,84 148.1,97.6 155.1,128 135.6,152.4 104.4,152.4 84.9,128 91.9,97.6"/><polygon class="radar-ring" points="120,66 162.2,86.3 172.6,132 143.4,168.7 96.6,168.7 67.4,132 77.8,86.3"/><polygon class="radar-ring" points="120,48 176.3,75.1 190.2,136 151.2,184.9 88.8,184.9 49.8,136 63.7,75.1"/>
         <line class="radar-axis" x1="120" y1="120" x2="120" y2="48"/><line class="radar-axis radar-axis-inactive" x1="120" y1="120" x2="176.3" y2="75.1"/><line class="radar-axis" x1="120" y1="120" x2="190.2" y2="136"/><line class="radar-axis" x1="120" y1="120" x2="151.2" y2="184.9"/><line class="radar-axis" x1="120" y1="120" x2="88.8" y2="184.9"/><line class="radar-axis" x1="120" y1="120" x2="49.8" y2="136"/><line class="radar-axis" x1="120" y1="120" x2="63.7" y2="75.1"/>
-        <g class="radar-data"><polygon class="radar-poly-fill" fill="#1B2A4A" points="120.0,62.4 120.0,120.0 148.1,126.4 147.1,176.2 95.0,171.9 77.9,129.6 80.6,88.6"/><polygon class="radar-poly-stroke" stroke="#1B2A4A" points="120.0,62.4 120.0,120.0 148.1,126.4 147.1,176.2 95.0,171.9 77.9,129.6 80.6,88.6"/></g>
+        <g class="radar-data"><polygon class="radar-poly-fill" fill="#1B2A4A" points="120.0,73.2 120.0,120.0 169.1,131.2 142.9,167.6 95.0,171.9 77.9,129.6 80.6,88.6"/><polygon class="radar-poly-stroke" stroke="#1B2A4A" points="120.0,73.2 120.0,120.0 169.1,131.2 142.9,167.6 95.0,171.9 77.9,129.6 80.6,88.6"/></g>
         <text class="radar-label" x="120" y="22" text-anchor="middle">V</text><text class="radar-label radar-label-inactive" x="193" y="61" text-anchor="start">E</text><text class="radar-label" x="212" y="141" text-anchor="start">R</text><text class="radar-label" x="161" y="205" text-anchor="start">D</text><text class="radar-label" x="79" y="205" text-anchor="end">I</text><text class="radar-label" x="28" y="141" text-anchor="end">C</text><text class="radar-label" x="47" y="61" text-anchor="end">T</text>
     </svg></div>
-    <div class="dim-list" id="dims" data-dims='[{"l":"V","s":16,"m":20,"high":true},{"l":"E","s":0,"m":15,"inactive":true},{"l":"R","s":8,"m":20},{"l":"D","s":13,"m":15,"high":true},{"l":"I","s":8,"m":10,"high":true},{"l":"C","s":6,"m":10},{"l":"T","s":7,"m":10,"high":true}]'></div>
+    <div class="dim-list" id="dims" data-dims='[{"l":"V","s":13,"m":20,"high":true},{"l":"E","s":0,"m":15,"inactive":true},{"l":"R","s":14,"m":20,"high":true},{"l":"D","s":11,"m":15,"high":true},{"l":"I","s":8,"m":10,"high":true},{"l":"C","s":6,"m":10},{"l":"T","s":7,"m":10,"high":true}]'></div>
   </div>
   <div class="cta-bar"><a href="/" class="cta-link">View All 70 Evaluations</a><a href="/#subscribe" class="cta-link">Get Notified of Score Changes</a></div>
 </div>
